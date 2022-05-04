@@ -361,7 +361,7 @@ class RemoteDeviceManagment:
                       0xff, 0xff, 0xff, 0xff, 0xff, 0xff)
     _transaction_number = 1
 
-    def __init__(self, port: str, buffer: int = 50, timeout: int = 0.015,
+    def __init__(self, port: str, buffer: int = 50, timeout: int = 0.15,
                  discovery_timeout: int = 60) -> None:
         self.com = Serial(port, timeout=timeout)
         self.buffer = buffer
